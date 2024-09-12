@@ -1,0 +1,57 @@
+body {
+    display:flex-box;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #514d4d;
+}
+
+canvas {
+    border: 2px solid rgb(88, 52, 13);
+    border-width: 20px;
+    background-color: rgb(41, 90, 50);
+}
+
+#controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for larger screens */
+@media (min-width: 1024px) {
+    canvas {
+        width: 90%;
+        height: 80%;
+    }
+}
+
+/* Styles for medium-sized screens (tablets) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    canvas {
+        width: 90%;
+        height: 60%;
+    }
+}
+
+/* Styles for small screens (phones) */
+@media (max-width: 768px) {
+    canvas {
+        width: 95%;
+        height: 50%;
+        border-width: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #controls {
+        flex-direction: column;
+    }
+
+    button, input {
+        margin-bottom: 10px;
+    }
+}
